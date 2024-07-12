@@ -10,11 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: |
-    echo "Available Node.js versions:"
-    ls -la /opt/hostedtoolcache/Node
-  displayName: 'List available Node.js versions'
-
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
